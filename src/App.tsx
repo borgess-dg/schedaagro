@@ -1,9 +1,12 @@
-import { Map } from './components/Map'
+import { Routes } from './routes'
 
 import 'leaflet/dist/leaflet.css'
+import 'leaflet-draw'
 import './App.css'
-import { Header } from './components/Header'
 import { SideBar } from './components/SideBar'
+import { Header } from './components/Header'
+
+
 
 function App() {
 
@@ -11,7 +14,7 @@ function App() {
     <>
       <Header></Header>
       <SideBar></SideBar>
-      <Map></Map>
+      <Routes></Routes>
     </>
   )
 }

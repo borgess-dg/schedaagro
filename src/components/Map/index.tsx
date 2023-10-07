@@ -1,6 +1,8 @@
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer} from "react-leaflet";
+
 
 export const Map = () => {
+
     return (
         <MapContainer
         className="h-[100vh] w-[100vw] absolute -z-10"
@@ -10,7 +12,7 @@ export const Map = () => {
         attributionControl={false}
         >
             <TileLayer 
-            url='http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
+            url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
             subdomains={['mt0','mt1','mt2','mt3']}
             maxZoom={20}
             />
